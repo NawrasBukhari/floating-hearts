@@ -15,21 +15,21 @@
                     name="enabled"
                     :value="setting('floating-hearts.enabled')"
                     data-bb-toggle="collapse"
-                    data-bb-target=".floating-hearts-animation.settings"
+                    data-bb-target=".floating-hearts-animation-settings"
                 />
             </div>
 
-            <div class="floating-hearts-animation.settings"
+            <div class="floating-hearts-animation-settings"
                  data-bb-value="1" @style(['display: none' => ! setting('floating-hearts.enabled')])>
                 <x-core-setting::text-input
                     :label="trans('plugins/floating-hearts::floating-hearts.hearts_count')"
-                    :value="setting('floating-hearts.hearts_count')"
+                    :value="setting('floating-hearts.hearts_count', 8)"
                     name="hearts_count"
                 />
 
                 <x-core-setting::text-input
                     :label="trans('plugins/floating-hearts::floating-hearts.duration')"
-                    :value="setting('floating-hearts.duration')"
+                    :value="setting('floating-hearts.duration', 5)"
                     name="duration"
                 />
             </div>
