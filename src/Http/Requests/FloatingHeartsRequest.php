@@ -12,8 +12,8 @@ class FloatingHeartsRequest extends Request
     {
         return [
             'enabled' => ['sometimes', 'boolean'],
-            'hearts_count' => ['nullable', 'required_if:enabled,1', 'integer'],
-            'duration' => ['nullable', 'required_if:enabled,1', 'integer'],
+            'hearts_count' => ['nullable', 'integer'],
+            'duration' => ['nullable', 'integer'],
         ];
     }
 }

@@ -5,7 +5,7 @@
     "provider": "NawrasBukhari\\FloatingHearts\\Providers\\FloatingHeartsServiceProvider",
     "author": "Nawras Bukhari",
     "url": "https://github.com/NawrasBukhari/floating-hearts",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "This package provides a simple way to add floating hearts to your Botble CMS website.",
     "minimum_core_version": "7.1.0"
 }
